@@ -1,0 +1,41 @@
+void setup()
+{
+  pinMode(9, INPUT);
+  pinMode(8, INPUT);
+  pinMode(7, INPUT);
+  pinMode(6, INPUT);
+  pinMode(5, INPUT);
+  pinMode(4, INPUT);
+  pinMode(3, INPUT);
+  pinMode(2, INPUT);
+  pinMode(1, OUTPUT);
+}
+
+void loop()
+{
+  if (digitalRead(9) == 1) {
+    tone(1, 261.63, 20); 
+  }
+  if (digitalRead(8) == 1) {
+    tone(1, 293.66, 20); 
+  }
+  if (digitalRead(7) == 1) {
+    tone(1, 329.63, 20); 
+  }
+  if (digitalRead(6) == 1) {
+    tone(1, 349.23, 20); 
+  }
+  if (digitalRead(5) == 1) {
+    tone(1, 392.00, 20); 
+  }
+  if (digitalRead(4) == 1) {
+    tone(1, 440.00, 20); 
+  }
+  if (digitalRead(3) == 1) {
+    tone(1, 493.88, 20); 
+  }
+  if (digitalRead(2) == 1) {
+    tone(1, 523.25, 20); 
+  }
+  delay(10);
+}
